@@ -65,8 +65,46 @@ Example command:
 Clone this repository to your desired folder:
 
 ```sh
-  cd my-folder
-  git clone https://github.com/kimitawanjohi/vet-clinic.git
+cd my-folder
+git clone https://github.com/kimitawanjohi/vet-clinic.git
+```
+
+Make sure you have Postgres installed and running on your system.
+
+Create a database called "vetclinic" in your Postgres instance. You can use the following command in the Postgres terminal:
+
+```
+CREATE DATABASE vetclinic;
+```
+Navigate to the project directory:
+
+```
+cd vet-clinic
+```
+Open the schema.sql file in a text editor and make sure it contains the necessary SQL statements to create the required tables. Adjust the file if needed to match your desired table schema.
+
+Execute the schema.sql file to create the tables in the vetclinic database. You can use the following command:
+
+```
+psql -d vetclinic -f schema.sql
+```
+This command uses the psql utility to execute the SQL statements in the schema.sql file against the vetclinic database.
+
+Open the data.sql file in a text editor and verify that it contains the necessary SQL statements to insert data into the tables. Modify the file if needed to include the desired data.
+
+Execute the data.sql file to insert the data into the tables. Use the following command:
+
+```
+psql -d vetclinic -f data.sql
+```
+This command executes the SQL statements in the data.sql file against the vetclinic database, inserting the data into the appropriate tables.
+
+Finally, if you have any specific queries you want to run on the tables, open the queries.sql file and add your desired queries.
+
+Execute the queries.sql file to run your queries against the tables. Use the following command:
+
+```
+psql -d vetclinic -f queries.sql
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
