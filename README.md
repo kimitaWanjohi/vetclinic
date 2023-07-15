@@ -143,6 +143,12 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Acknowledgments -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- [microverse](https://www.microverse.org/)
+
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
