@@ -48,12 +48,6 @@ FROM animals
 WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
 GROUP BY species;
 
--- corrections
-
-UPDATE animals
-SET species = 'pokemon'
-WHERE species NOT LIKE '%mon';
-
 
 SELECT * FROM animals; 
 
